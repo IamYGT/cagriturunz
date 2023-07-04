@@ -1,0 +1,4 @@
+2021-03-26 0:32:25 [ERROR]: SQLSTATE[HY000] [1045] Access denied for user 'cagriturunzz_db'@'localhost' (using password: YES)
+2021-03-26 0:32:26 [ERROR]: SQLSTATE[HY000] [1045] Access denied for user 'cagriturunzz_db'@'localhost' (using password: YES)
+2021-03-26 0:32:56 [ERROR]: SQLSTATE[HY000] [1045] Access denied for user 'cagriturunzz_db'@'localhost' (using password: YES)
+

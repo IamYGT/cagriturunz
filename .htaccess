@@ -1,0 +1,22 @@
+ 	Options +FollowSymLinks
+	RewriteEngine On
+	RewriteBase /  
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME}.php -f
+	RewriteRule ^(.*)$ $1.php
+	RewriteRule ^([a-z]+)\/?$ $1.php [NC]
+	
+ 
+	RewriteRule ^index$ index.php [L,QSA]    
+	RewriteRule ^news-detail$ index.php [L,QSA]    
+
+
+	RewriteRule proje/([a-zA-Z0-9_-]+)$ proje-detay.php?url=$1 [L,QSA] 
+	RewriteRule hizmet/([a-zA-Z0-9_-]+)$ hizmet-detay.php?url=$1 [L,QSA] 
+	RewriteRule blogdetay/([a-zA-Z0-9_-]+)$ blog-detay.php?url=$1 [L,QSA] 
+	RewriteRule kurumsal/([a-zA-Z0-9_-]+)$ kurumsal-detay.php?url=$1 [L,QSA] 
+	RewriteRule service-detail/([a-zA-Z0-9_-]+)$ services-detail.php?url=$1 [L,QSA] 
+	#RewriteRule car/([a-zA-Z0-9_-]+)$ araclar.php?url=$1 [L,QSA] 
+	RewriteRule	^car/(.*)$ araclar.php
+ 
+	RewriteRule ^sitemap\.xml$ sitemap.php [L]

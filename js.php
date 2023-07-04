@@ -1,0 +1,11 @@
+    <script src="<?php echo $ayarlar["strURL"]; ?>\js\jquery-3.0.0.min.js"></script>
+    <script src="<?php echo $ayarlar["strURL"]; ?>\js\jquery-migrate-3.0.0.min.js"></script>
+    <script src="<?php echo $ayarlar["strURL"]; ?>\js\modernizr-2.6.2.min.js"></script>
+    <script src="<?php echo $ayarlar["strURL"]; ?>\js\popper.min.js"></script>
+    <script src="<?php echo $ayarlar["strURL"]; ?>\js\bootstrap.min.js"></script>
+    <script src="<?php echo $ayarlar["strURL"]; ?>\js\scrollIt.min.js"></script>
+    <script src="<?php echo $ayarlar["strURL"]; ?>\js\jquery.waypoints.min.js"></script>
+    <script src="<?php echo $ayarlar["strURL"]; ?>\js\owl.carousel.min.js"></script>
+    <script src="<?php echo $ayarlar["strURL"]; ?>\js\jquery.stellar.min.js"></script>
+    <script src="<?php echo $ayarlar["strURL"]; ?>\js\jquery.fancybox.min.js"></script>
+    <script src="<?php echo $ayarlar["strURL"]; ?>\js\scripts.js"></script>

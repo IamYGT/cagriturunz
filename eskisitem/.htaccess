@@ -1,0 +1,21 @@
+ 	Options +FollowSymLinks
+	RewriteEngine On
+	RewriteBase /  
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME}.php -f
+	RewriteRule ^(.*)$ $1.php
+	RewriteRule ^([a-z]+)\/?$ $1.php [NC]
+	
+ 
+	RewriteRule ^index$ index.php [L,QSA]    
+	RewriteRule ^news-detail$ index.php [L,QSA]    
+
+
+	RewriteRule projedetay/([a-zA-Z0-9_-]+)$ proje-detay.php?url=$1 [L,QSA] 
+	RewriteRule blogdetay/([a-zA-Z0-9_-]+)$ blog-detay.php?url=$1 [L,QSA] 
+	RewriteRule service-detail/([a-zA-Z0-9_-]+)$ services-detail.php?url=$1 [L,QSA] 
+	#RewriteRule car/([a-zA-Z0-9_-]+)$ araclar.php?url=$1 [L,QSA] 
+	RewriteRule	^car/(.*)$ araclar.php
+ 
+ 	#RewriteRule ^chip-tunings/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ /arac-detay.php?url=$1&url2=$2&url3=$3&url4=$4 [L,QSA]
+	RewriteRule	^chip-tunings/(.*)$ arac-detay.php
